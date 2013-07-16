@@ -1,0 +1,4 @@
+#This is the config file for QBProtect
+access:
+  use_qbaccess: true
+  default_group: novice

@@ -1,0 +1,17 @@
+name: QBProtect
+main: com.qbcraft.QBProtect.QBProtect
+version: 1.0
+commands:
+  qa:
+    description: Sets the context to the specified user.
+    usage: Type /qa help for help.
+    permission: qbprotect.access.manage
+    permission-message: You don't have permission to manage QBProtect Access.
+permissions:
+    qbprotect.access.*:
+        description: Gives access to all QBProtect Access commands
+        children:
+            qbprotect.access.manage: true
+    qbprotect.access.manage:
+        description: Allows you to manage QBProtect Access
+        default: op
